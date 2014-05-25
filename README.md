@@ -33,17 +33,17 @@ The "run_analysis.R" performs the following operations
 
 2. Combines data from "X_test.txt" with "activity" (from "y_test.txt") and "subject" (from "subject_test.txt") data to create a "merged test" data set.
 
-3. Creates a combined data set by merging "merged train" and "merged test" data
+3. Creates a combined data set by merging "merged train" and "merged test" data.
 
-4. Extracts only the "mean" and "std" measurement data (as explained in section "Selection of measurements for tidy data") from the combined data set ("meanStdData")
+4. Extracts only the "mean" and "std" measurement data (as explained in section "Selection of measurements for tidy data") from the combined data set ("meanStdData").
 
-5. Replaces "activity" code (numeric) in "meanStdData" with descriptive activity names provided in "activity_lables.txt"
+5. Replaces "activity" code (numeric) in "meanStdData" with descriptive activity names provided in "activity_lables.txt".
 
-6. Cleans up variable names (removes special characters like "-" and "()") and creates descriptive names for variables in "meanStdData" 
+6. Cleans up variable names (removes special characters like "-" and "()") and creates descriptive names for variables in "meanStdData". 
 
-7. Calculates the mean values, by activity for all subjects, of the variables in "meanStdData". Affixes a prefic "avg" to denote that this variables are average (or mean) of underlying variables
+7. Calculates the mean values, by activity for all subjects, of the variables in "meanStdData". Adds a prefix "avg" to denote that this variables are average (or mean) of underlying variables.
 
-8. Creates a tidy data set using the mean values and apprporiate variable names
+8. Creates a tidy data set using the mean values and apprporiate variable names.
 
 9. Writes out "tidydata.txt"  containing  the tidy data set in the same folder that includes "run_analysis.R" and prints "Tidy data set has been created" on the console.
 
