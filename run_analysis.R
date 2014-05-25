@@ -16,21 +16,23 @@
 ## Folder 'UCI HAR Dataset' gets created during unzip. This folder contains data,
 ## readme files and all other informarion regarding the raw data set.
 
-## Read feature names
+## Get features
 featureNames <- read.table("./UCI HAR Dataset/features.txt")
 featureNames <- featureNames[,2]
 
-## Read Activity Labes, convert to lower case and remove "_"
+## Get Activity Labels, convert to lower case and remove "_"
 activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt")
 activityLabels <- tolower(activityLabels[,2])
 activityLabels <- gsub("_","",activityLabels)
+
+## Calculate number of activities
 numActivity = length(activityLabels)
 
-## Get training data
+## Obtain training data
 trainData <- read.table("./UCI HAR Dataset/train/X_train.txt", header=F)
 names(trainData) <- featureNames
 
-## Get activity information for the training data
+## Obtain activity information for the training data
 trainActivity <- read.table("./UCI HAR Dataset/train/y_train.txt", header = F) 
 names(trainActivity) <- "activity"
 
@@ -70,10 +72,15 @@ meanStdData <- mergedAllData[,grepl("mean[()]|std[()]",featureNames)]
 remove("mergedTrainData","mergedTestData")
 
 ## Replace numeric activity values with descriptive activity labels
-act <- vector(mode = "character", length = nrow(meanStdData))
+## Initialize character vector
+act <- vector(mode = "character", length = nrow(meanStdData))  
 for(i in 1:nrow(meanStdData)){
-        act[i] <- switch(meanStdData[i,"activity"],activityLabels[1],activityLabels[2],activityLabels[3],activityLabels[4],activityLabels[5],activityLabels[6])
+        
+        act[i] <- switch(meanStdData[i,"activity"],activityLabels[1],
+                         activityLabels[2],activityLabels[3],activityLabels[4],
+                         activityLabels[5],activityLabels[6])
 }
+## Set descriptive labels to "activity" column
 meanStdData[,"activity"] <- act
 
 ## Rename data labels with descriptive names. Replace "t" by "time", "f" by "freq"
@@ -109,7 +116,7 @@ actNames <- names(dataSplitAct)
 ct <- 0  ## Initialize counter
 
 ## For each activity, split by subject and calculate mean for each subject
-for (i in 1:numActivity){           
+for (i in 1:numActivity){ 
         # Write this activity name        
         indx = 1:numSubject+(i-1)*numSubject
         bb[indx,1] <- rep(actNames[i],numSubject)
@@ -121,7 +128,8 @@ for (i in 1:numActivity){
         dummy1 <- split(dummy,dummy$subject)  
         
         # For each subject calculate mean values
-        for (j in 1:numSubject){
+        for (j in 1:numSubject){                
+                # Increement counter
                 ct = ct+1    
                 
                 # Get data for this subject
@@ -150,6 +158,7 @@ nn <- paste("avg",nn,sep = "")
 nn <- gsub("time","Time",nn)
 nn <- gsub("freq","Freq",nn)
 
+## Set descriptive names to tidyData
 names(tidyData) <- c("activity","subject", nn)
 
 ## Write out tidy data set
