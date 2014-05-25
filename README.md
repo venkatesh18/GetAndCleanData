@@ -48,7 +48,7 @@ The "run_analysis.R" performs the following operations
 
 6. Cleans up variable names (removes special characters like "-" and "()") and creates descriptive names for variables in "meanStdData". 
 
-7. Calculates the mean values, by activity for all subjects, of the variables in "meanStdData". Adds a prefix "avg" to denote that this variables are average (or mean) of underlying variables.
+7. Calculates the mean values, by activity for all subjects, of the variables in "meanStdData". Adds a prefix "avg" to denote that these computed variables are average (or mean) of underlying variables.
 
 8. Creates a tidy data set using the mean values and apprporiate variable names.
 
