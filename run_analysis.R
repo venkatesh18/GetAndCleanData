@@ -3,8 +3,8 @@
 ## mean of all selected variables for each subject by each activity. The program assumes
 ## that the "UCI HAR Dataset" folder, containing all required data, is available in the 
 ## working directory of this program file. If, "UCI HAR Dataset" folder is not availabe
-## or if some data is missing, you may uncomment the code in lines 11 to 14 and 
-## run this program.
+## or if some data is missing, the uncomment the code in lines 11 to 14 and execute
+## this program.
 
 ## Code for downloading the data and unzipping - Remove comments for downloading data
 

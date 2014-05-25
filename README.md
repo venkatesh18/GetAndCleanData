@@ -1,5 +1,5 @@
 README file for run_analysis.R
-=================================================================================================
+======================================================================================
 
 This file provides a brief description and instructions for running the "run_analysis.R" program. The "run_analysis.R"  program creates a tidy data set that contains the summary of selected measurements from the raw data. The raw data is obtained from the "UCI HAR Dataset". The "run_analysis.R" program assumes that the "UCI HAR Dataset", containing all the required data, is available in the directory that contains the "run_analysis.R" program file.
 

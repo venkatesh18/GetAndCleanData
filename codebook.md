@@ -24,6 +24,8 @@ Details of how "run_analysis" code processes this raw data to create the tidy da
 
 #### Codebook
 
+The variables in the tidy data set are describe below
+
 | Count | Variable Name              | Variable Type | Units      | Range of Values                                                        | Description                                                                                                                                                |
 |-------|----------------------------|---------------|------------|------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1     | activity                   | character     | No units   | laying, sitting, standing, walking, walkingupstairs, walkingdownstairs | Describes activity that was performed by the subject                                                                                                       |
