@@ -7,16 +7,16 @@ This file provides the instructions for running the "run_analysis.R" program. Th
 
 For the creation of the tidy data set, "run_analysis.R" uses the following files in the "UCI HAR Dataset" folder
 
-* 'train/X_train.txt'         -- Contains raw training data obtained from measurements
-* 'train/y_train.txt'         -- Contains activity code corrresponding to observations in X_train.txt
-* 'train/subject_train.txt'   -- Contains subject code corresponding to observations in X_train.txt         
-* 'test/X_test.txt'           -- Contains raw test data obtained from measurements
-* 'test/y_test.txt'           -- Contains activity code corrresponding to observations in X_test.txt
-* 'test/subject_test.txt'     -- Contains subject code corresponding to observations in X_test.txt  
-* features.txt                -- List of features (column names) for raw training and test data
-* activity_labels.txt         -- Contains activity names corresponding to activity codes
+* 'train/X_train.txt'                   -- Contains raw training data obtained from measurements
+* 'train/y_train.txt'                   -- Contains activity code corrresponding to observations in X_train.txt
+* 'train/subject_train.txt'             -- Contains subject code corresponding to observations in X_train.txt         
+* 'test/X_test.txt'                     -- Contains raw test data obtained from measurements
+* 'test/y_test.txt'                     -- Contains activity code corrresponding to observations in X_test.txt
+* 'test/subject_test.txt'               -- Contains subject code corresponding to observations in X_test.txt  
+* features.txt                          -- List of features (column names) for raw training and test data
+* activity_labels.txt                   -- Contains activity names corresponding to activity codes
 
-For more information on the raw data, refer to the README file in the "UCI HAR Dataset" folder.
+For further details on the raw data, refer to the README.txt file in the "UCI HAR Dataset" folder.
 
 #### Note on variable names
 In the case of  small variable names, lower case is used. For medium to large variable names, camel case is used for the sake of readability. While lower case naming convention has been recommended (whenever possible) in the lecture notes, the R style guide in Google ("https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml#identifiers") suggests that camel case is also acceptable. 
