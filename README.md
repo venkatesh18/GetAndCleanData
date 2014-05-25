@@ -45,7 +45,7 @@ The "run_analysis.R" performs the following operations
 
 8. Creates a tidy data set using the mean values and apprporiate variable names
 
-9. Writes out "tidydata.txt" containing the tidy data set.
+9. Writes out "tidydata.txt" containing the tidy data set and prints "Tidy data set has been created" on the console.
 
 
 

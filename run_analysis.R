@@ -159,5 +159,5 @@ write.table(tidyData,"tidydata.txt", row.names = FALSE, quote = FALSE)
 remove("aa","bb","cc","dummy","dummy1","dummy2","act","actNames","dataSplitAct","i","indx")        
 remove("featureNames","ct","j","nn","activityLabels","numActivity","numSubject","numVariable")
 
-print(" Tidy data set has been created")
+print("Tidy data set has been created")
 
