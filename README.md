@@ -1,7 +1,7 @@
 README file for run_analysis.R
 =================================================================================================
 
-This file provides the instructions for running the "run_analysis.R" program. The "run_analysis.R"  program creates a tidy data set that contains the summary of selected measurements from the raw data. The raw data is obtained from the "UCI HAR Dataset". The "run_analysis.R" program assumes that the "UCI HAR Dataset", containing all the required data, is available in the directory that contains the "run_analysis.R" program file. If the data set is not available or does not contain all required raw data files, the user may download the raw files and unzip them by uncommenting the lines 11 to 14 in "run_analysis.R" and then execute the program.
+This file provides a brief description and instructions for running the "run_analysis.R" program. The "run_analysis.R"  program creates a tidy data set that contains the summary of selected measurements from the raw data. The raw data is obtained from the "UCI HAR Dataset". The "run_analysis.R" program assumes that the "UCI HAR Dataset", containing all the required data, is available in the directory that contains the "run_analysis.R" program file. If the data set is not available or does not contain all required raw data files, the user may download the raw files and unzip them by uncommenting the lines 11 to 14 in "run_analysis.R" and then execute the program.
 
 #### Files used
 
@@ -45,7 +45,7 @@ The "run_analysis.R" performs the following operations
 
 8. Creates a tidy data set using the mean values and apprporiate variable names
 
-9. Writes out "tidydata.txt" containing the tidy data set and prints "Tidy data set has been created" on the console.
+9. Writes out "tidydata.txt"  containing  the tidy data set in the same folder that includes "run_analysis.R" and prints "Tidy data set has been created" on the console.
 
 
 
